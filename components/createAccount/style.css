@@ -1,0 +1,132 @@
+.create {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+    width: 500px;
+    height: 700px;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+
+.create h3 {
+    font-family: Montserrat;
+    font-size: 28px;
+}
+
+.create input {
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    width: 250px;
+    height: 40px;
+    font-family: Montserrat;
+    border-bottom: .8px solid black;
+}
+
+.create button {
+    color: white;
+    font-weight: 100;
+    font-size: 22px;
+    font-family: Montserrat;
+    width: 60%;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: #4285f4;
+    border: none;
+    transition: width .1s, height .1s, font-size .1s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+}
+
+.create button:hover {
+    transition: width .2s, height .2s, font-size .2s;
+    width: 50.8%;
+    height: 40.8px;
+    cursor:pointer;
+}
+
+@keyframes toVisible {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes toHidden {
+    from{opacity: 1;}
+    to {opacity: 0;}
+}
+
+.checked {
+    padding-top: 40px;
+    right: -10px;
+    height: 15px;
+    position: relative;
+    opacity: 0;
+    animation-name: toHidden;
+    animation-duration: .2s;
+}
+
+.wrong {
+    padding-top: 40px;
+    right: -10px;
+    height: 15px;
+    position: relative;
+    opacity: 1;
+    animation-name: toWrong;
+    animation-duration: .2s;
+}
+
+@keyframes toWrong {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
+.visible {
+    opacity: 1;
+    animation-name: toVisible;
+    animation-duration: .2s;
+}
+
+.passwordInstructions {
+    position: inherit;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 2%;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, .5); 
+    text-align: center;
+    padding: 0px;
+    margin-bottom: -23.6px;
+    margin-top: -20px;
+    margin-left: -15px;
+    width: 250px;
+    height: 45px;
+    font-family: Montserrat;
+    font-size: 13px;
+    opacity: .0;
+    transition: opacity 200ms linear;
+    z-index: 10;
+    padding-bottom: 15px;
+}
+
+.showInstructions {
+    transition: opacity 200ms linear;
+    opacity: 1;
+}
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    .create {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .create {
+        width: 400px;
+    }
+}

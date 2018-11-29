@@ -1,0 +1,149 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+.loginCreate {
+  display: flex;
+  width: 100%;
+}
+
+.App h1 {
+  margin-bottom: 40px;
+  font-family: Montserrat;
+  font-size: 50px;
+}
+
+.App h2 {
+  margin-left: 70px;
+  margin-right: 70px;
+  font-size: 40px;
+  margin-top: 160px;
+  font-family: Montserrat;
+  width: 100px;
+  padding-bottom: 30px;
+}
+
+.logOut button {
+  color: white;
+  font-size: 22px;
+  font-family: Montserrat;
+  font-weight: 100;
+  width: 50%;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 5%;
+  background-color: #4285f4;
+  border: none;
+  transition: width .1s, height .1s, font-size .1s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+}
+
+.logOut button:hover {
+  transition: width .2s, height .2s, font-size .2s;
+  width: 50.8%;
+  height: 40.8px;
+  cursor:pointer;
+}
+
+.accountCreatedPopup {
+  position: sticky;
+  width: 100%;
+  margin-top: -10px;
+  background-color: #4285f4;
+  color: white;
+  font-family: Montserrat;
+  box-shadow: 4px 1px 15px rgba(0, 0, 0, .5);
+  opacity: 0;
+  font-size: 16px;
+}
+
+.accountCreatedDup {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-top: -10px;
+  background-color: #4285f4;
+  color: white;
+  font-family: Montserrat;
+  box-shadow: 4px 1px 15px rgba(0, 0, 0, .5);
+  opacity: 0;
+  animation-name: showPopup;
+  animation-duration: 2.1s;
+  font-size: 16px;
+}
+
+@keyframes showPopup {
+  0%   {opacity: 0;}
+  20%  {opacity: 1;}
+  80%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.accountCreatedDupTwo {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-top: -10px;
+  background-color: #4285f4;
+  color: white;
+  font-family: Montserrat;
+  box-shadow: 4px 1px 15px rgba(0, 0, 0, .5);
+  opacity: 0;
+  animation-name: showPopupTwo;
+  animation-duration: 2.1s;
+  font-size: 16px;
+}
+
+@keyframes showPopupTwo {
+  0%   {opacity: 0;}
+  20%  {opacity: 1;}
+  80%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.accountCreated {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-top: -10px;
+  background-color: #4285f4;
+  color: white;
+  font-family: Montserrat;
+  box-shadow: 4px 1px 15px rgba(0, 0, 0, .5);
+  opacity: 0;
+  animation-name: showAccountCreated;
+  animation-duration: 2.1s;
+  font-size: 16px;
+}
+
+.loggedInAccountBackground {
+  background-color: #f2f2f2;
+  height: 740px;
+}
+
+@keyframes showAccountCreated {
+  0%   {opacity: 0;}
+  20%  {opacity: 1;}
+  80%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@media only screen and (max-width: 1100px) {
+  .loginCreate {
+    flex-direction: column;
+    align-items: center;
+  }
+  .App h2 {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 10px;
+  }
+}

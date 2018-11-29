@@ -1,0 +1,178 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-right: 200px;
+}
+
+.loginTab {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+    width: 500px;
+    height: 400px;
+}
+
+.loginTab h3 {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.loginTab input {
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 250px;
+    font-size: 18px;
+    height: 40px;
+    
+    font-family: Montserrat;
+    border-bottom: .8px solid black;
+}
+
+.loginTab button {
+    color: white;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 100;
+    width: 60%;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: #4285f4;
+    border: none;
+    transition: width .1s, height .1s, font-size .1s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+}
+
+.loginTab button:hover {
+    transition: width .2s, height .2s, font-size .2s;
+    width: 50.8%;
+    height: 40.8px;
+    cursor:pointer;
+}
+
+
+.invalid {
+    position: inherit;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 2%;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: -33.6px;
+    margin-top: -10px;
+    margin-left: -15px;
+    width: 250px;
+    height: 20px;
+    font-family: Montserrat;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 200ms linear;
+    z-index: 10;
+    animation-name: Show;
+    animation-duration: 2s;
+}
+
+@keyframes Show {
+    0%   {opacity: 0;}
+    20%  {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.valid {
+    position: inherit;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 2%;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: -33.6px;
+    margin-top: -10px;
+    margin-left: -15px;
+    width: 250px;
+    height: 20px;
+    font-family: Montserrat;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 200ms linear;
+    z-index: 10;
+    animation-name: Hide;
+    animation-duration: 2s;
+}
+
+@keyframes Hide {
+    0%   {opacity: 0;}
+    20%  {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.doesntExist {
+    position: inherit;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 2%;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: -33.6px;
+    margin-top: -10px;
+    margin-left: -15px;
+    width: 250px;
+    height: 20px;
+    font-family: Montserrat;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 200ms linear;
+    z-index: 10;
+    animation-name: doesNotExist;
+    animation-duration: 2s;
+}
+
+@keyframes doesNotExist {
+    0%   {opacity: 0;}
+    20%  {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.hidden {
+    position: inherit;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 2%;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: -33.6px;
+    margin-top: -10px;
+    margin-left: -15px;
+    width: 250px;
+    height: 20px;
+    font-family: Montserrat;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 200ms linear;
+    z-index: 10;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+    .loginTab {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .loginContainer {
+        margin-right: 0px;
+    }
+    .loginTab {
+        width: 400px;
+    }
+}
